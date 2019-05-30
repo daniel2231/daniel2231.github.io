@@ -5,50 +5,17 @@
         <description>Recent content in Posts on Daniel&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 31 May 2019 03:20:11 +0900</lastBuildDate>
+        <lastBuildDate>Fri, 31 May 2019 03:24:30 +0900</lastBuildDate>
         <atom:link href="https://daniel2231.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Test Post3</title>
-            <link>https://daniel2231.github.io/posts/test-post3/</link>
-            <pubDate>Fri, 31 May 2019 03:20:11 +0900</pubDate>
+            <title>Hello World!</title>
+            <link>https://daniel2231.github.io/posts/hello-world/</link>
+            <pubDate>Fri, 31 May 2019 03:24:30 +0900</pubDate>
             
-            <guid>https://daniel2231.github.io/posts/test-post3/</guid>
-            <description>아니 이거 은근 어렵네 ㅠㅠ</description>
-            <content type="html"><![CDATA[<p>아니 이거 은근 어렵네 ㅠㅠ</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Test Post</title>
-            <link>https://daniel2231.github.io/posts/test-post/</link>
-            <pubDate>Fri, 31 May 2019 03:14:34 +0900</pubDate>
-            
-            <guid>https://daniel2231.github.io/posts/test-post/</guid>
-            <description>휴 이제 그만 자고 싶다</description>
-            <content type="html"><![CDATA[<p>휴 이제 그만 자고 싶다</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Second Post</title>
-            <link>https://daniel2231.github.io/posts/second-post/</link>
-            <pubDate>Fri, 31 May 2019 02:40:20 +0900</pubDate>
-            
-            <guid>https://daniel2231.github.io/posts/second-post/</guid>
-            <description>Test 2</description>
-            <content type="html"><![CDATA[<p>Test 2</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>First Post Test</title>
-            <link>https://daniel2231.github.io/posts/first-post-test/</link>
-            <pubDate>Fri, 31 May 2019 01:26:03 +0900</pubDate>
-            
-            <guid>https://daniel2231.github.io/posts/first-post-test/</guid>
-            <description>안녕하세요 새 포스트 입니다 ㅎㅎ 테스트 포스트이긴 한데, 뭐, Diary처럼 한번 써볼까 합니다. Hugo로 만든 첫 블로그인데, Hexo로 만들다가 쓰기 불편해서 Hugo로 넘어왔습니다. 자주 자주 포스트를 써야 할텐데, 쉽지 않겠군요 ㅎㅎㅎㅎ 그럼, 내일 제가 Hugo와 GithubPage 연결 방법을 포스팅 해볼까 합니다. 내일 봐용~!</description>
-            <content type="html"><![CDATA[<p>안녕하세요 새 포스트 입니다 ㅎㅎ
+            <guid>https://daniel2231.github.io/posts/hello-world/</guid>
+            <description>안녕하세요 프로그래머를 꿈꾸는 Daniel 입니다 ㅎㅎ 테스트 포스트이긴 한데, 뭐, Diary처럼 한번 써볼까 합니다. Hugo로 만든 첫 블로그인데, Hexo로 만들다가 쓰기 불편해서 Hugo로 넘어왔습니다. 자주 자주 포스트를 써야 할텐데, 쉽지 않겠군요 ㅎㅎㅎㅎ 그럼, 내일 제가 Hugo와 GithubPage 연결 방법을 포스팅 해볼까 합니다. 내일 봐용~!</description>
+            <content type="html"><![CDATA[<p>안녕하세요 프로그래머를 꿈꾸는 Daniel 입니다 ㅎㅎ
 테스트 포스트이긴 한데, 뭐, Diary처럼 한번 써볼까 합니다.
 Hugo로 만든 첫 블로그인데, Hexo로 만들다가 쓰기 불편해서 Hugo로 넘어왔습니다.
 자주 자주 포스트를 써야 할텐데, 쉽지 않겠군요 ㅎㅎㅎㅎ

@@ -5,8 +5,19 @@
         <description>Recent content in Posts on Daniel&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 31 May 2019 02:40:20 +0900</lastBuildDate>
+        <lastBuildDate>Fri, 31 May 2019 03:14:34 +0900</lastBuildDate>
         <atom:link href="https://daniel2231.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Test Post</title>
+            <link>https://daniel2231.github.io/posts/test-post/</link>
+            <pubDate>Fri, 31 May 2019 03:14:34 +0900</pubDate>
+            
+            <guid>https://daniel2231.github.io/posts/test-post/</guid>
+            <description>휴 이제 그만 자고 싶다</description>
+            <content type="html"><![CDATA[<p>휴 이제 그만 자고 싶다</p>
+]]></content>
+        </item>
         
         <item>
             <title>Second Post</title>

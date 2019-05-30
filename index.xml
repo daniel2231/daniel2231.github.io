@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Fri, 31 May 2019 01:26:03 +0900</pubDate>
+      
+      <guid>/about/</guid>
+      <description>My name is Daniel
+This Website is made with HUGO</description>
+    </item>
+    
+    <item>
       <title>First Post Test</title>
       <link>/post/first-post-test/</link>
       <pubDate>Fri, 31 May 2019 01:26:03 +0900</pubDate>

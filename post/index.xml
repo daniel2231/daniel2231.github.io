@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Daniel&#39;s Blog</title>
-    <link>/post/</link>
+    <link>https://daniel2231.github.io/post/</link>
     <description>Recent content in Posts on Daniel&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 May 2019 02:40:20 +0900</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://daniel2231.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Second Post</title>
-      <link>/post/second-post/</link>
+      <link>https://daniel2231.github.io/post/second-post/</link>
       <pubDate>Fri, 31 May 2019 02:40:20 +0900</pubDate>
       
-      <guid>/post/second-post/</guid>
+      <guid>https://daniel2231.github.io/post/second-post/</guid>
       <description>Test 2</description>
     </item>
     
     <item>
       <title>First Post Test</title>
-      <link>/post/first-post-test/</link>
+      <link>https://daniel2231.github.io/post/first-post-test/</link>
       <pubDate>Fri, 31 May 2019 01:26:03 +0900</pubDate>
       
-      <guid>/post/first-post-test/</guid>
+      <guid>https://daniel2231.github.io/post/first-post-test/</guid>
       <description>안녕하세요 새 포스트 입니다 ㅎㅎ 테스트 포스트이긴 한데, 뭐, Diary처럼 한번 써볼까 합니다. Hugo로 만든 첫 블로그인데, Hexo로 만들다가 쓰기 불편해서 Hugo로 넘어왔습니다. 자주 자주 포스트를 써야 할텐데, 쉽지 않겠군요 ㅎㅎㅎㅎ 그럼, 내일 제가 Hugo와 GithubPage 연결 방법을 포스팅 해볼까 합니다. 내일 봐용~!</description>
     </item>
     

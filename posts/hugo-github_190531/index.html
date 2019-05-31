@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="">
+<meta name="description"
+    content="Hugo란? Static (정직) 웹 엔진으로, Markdown 기반입니다. 일종의 블로그 엔진이라 할 수 있겠군요. Hugo라는 블로그 프레임워크로 손쉽게 블로그를 만들 수 있습니다. 또한, 다양한 블로그 테마가 있어서 원하는 테마를 골라서 쓸 수 있습니다. 여러므로 편한 블로그 프레임워크인 것 같습니다.
+Github Pages란? 깃헙 페이지란 깃헙에서 무료로 웹 호스팅을 해주는 서비스 입니다. 간혹 가다가 블로그 중에 &amp;lt;github username&amp;gt;.github.io 형식의 URL을 발견 할 수 있는데, 이게 바로 깃헙 페이지로 만든 블로그라는 뜻입니다.
+깃허브 페이지에서 두가지 서비스를 제공해 줍니다." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://daniel2231.github.io/posts/hugo-github_190531/" />
+
+
+<title>
+    
+    Hugo와 Github Pages 연동하기 :: Daniel&#39;s Blog  — A Business Student trying to be a programmer
+    
+</title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.d90905eb29b71569a516566cd9662312bee9ab021c760de6949cdc92d6688be9.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="theme-color" content="#252627">
+<meta itemprop="name" content="Hugo와 Github Pages 연동하기">
+<meta itemprop="description" content="Hugo란? Static (정직) 웹 엔진으로, Markdown 기반입니다. 일종의 블로그 엔진이라 할 수 있겠군요. Hugo라는 블로그 프레임워크로 손쉽게 블로그를 만들 수 있습니다. 또한, 다양한 블로그 테마가 있어서 원하는 테마를 골라서 쓸 수 있습니다. 여러므로 편한 블로그 프레임워크인 것 같습니다.
+Github Pages란? 깃헙 페이지란 깃헙에서 무료로 웹 호스팅을 해주는 서비스 입니다. 간혹 가다가 블로그 중에 &lt;github username&gt;.github.io 형식의 URL을 발견 할 수 있는데, 이게 바로 깃헙 페이지로 만든 블로그라는 뜻입니다.
+깃허브 페이지에서 두가지 서비스를 제공해 줍니다.">
+
+
+<meta itemprop="datePublished" content="2019-05-31T14:54:26&#43;09:00" />
+<meta itemprop="dateModified" content="2019-05-31T14:54:26&#43;09:00" />
+<meta itemprop="wordCount" content="403">
+
+
+
+<meta itemprop="keywords" content="Study Notes," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://daniel2231.github.io/"/>
+
+<meta name="twitter:title" content="Hugo와 Github Pages 연동하기"/>
+<meta name="twitter:description" content="Hugo란? Static (정직) 웹 엔진으로, Markdown 기반입니다. 일종의 블로그 엔진이라 할 수 있겠군요. Hugo라는 블로그 프레임워크로 손쉽게 블로그를 만들 수 있습니다. 또한, 다양한 블로그 테마가 있어서 원하는 테마를 골라서 쓸 수 있습니다. 여러므로 편한 블로그 프레임워크인 것 같습니다.
+Github Pages란? 깃헙 페이지란 깃헙에서 무료로 웹 호스팅을 해주는 서비스 입니다. 간혹 가다가 블로그 중에 &lt;github username&gt;.github.io 형식의 URL을 발견 할 수 있는데, 이게 바로 깃헙 페이지로 만든 블로그라는 뜻입니다.
+깃허브 페이지에서 두가지 서비스를 제공해 줍니다."/>
+
+
+
+
+<meta property="article:published_time" content="2019-05-31 14:54:26 &#43;0900 KST" />
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">cd Uturn/</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://daniel2231.github.io/about">About</a></li><li><a href="https://daniel2231.github.io/posts">Blog</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="https://daniel2231.github.io/posts/hugo-github_190531/">Hugo와 Github Pages 연동하기</a></h1>
+
+            
+
+            <div class="post-content">
+                
+
+<h2 id="hugo란">Hugo란?</h2>
+
+<p>Static (정직) 웹 엔진으로, Markdown 기반입니다. 일종의 블로그 엔진이라 할 수 있겠군요. Hugo라는 블로그 프레임워크로 손쉽게 블로그를 만들 수 있습니다. 또한, 다양한 블로그 테마가 있어서 원하는 테마를 골라서 쓸 수 있습니다. 여러므로 편한 블로그 프레임워크인 것 같습니다.</p>
+
+<h2 id="github-pages란">Github Pages란?</h2>
+
+<p>깃헙 페이지란 깃헙에서 <strong>무료로</strong> 웹 호스팅을 해주는 서비스 입니다. 간혹 가다가 블로그 중에 <code>&lt;github username&gt;.github.io</code> 형식의 URL을 발견 할 수 있는데, 이게 바로 깃헙 페이지로 만든 블로그라는 뜻입니다.</p>
+
+<p>깃허브 페이지에서 두가지 서비스를 제공해 줍니다.</p>
+
+<ul>
+<li>사용자 페이지: github 계정당 하나씩 주는 사용자 페이지, 저장소는 <code>username/username.github.com</code>의 구조를 가집니다</li>
+<li>프로젝트 페이지: 프로젝트마다 만들 수 있는 페이지, 주소는 <a href="http://username.github.com/projectname"><code>username.github.com/projectname</code></a> 의 형태를 가집니다</li>
+</ul>
+
+<p>더 자세히 들어갈 수 있지만 일단 간단하게 (귀찮으니깐) 여기까지 하겠습니다 ㅎㅎ</p>
+
+<h2 id="hugo-github-pages-연동-방법">Hugo - Github pages 연동 방법</h2>
+
+<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub</a></p>
+
+<p>공식 문서를 참고해서 만들었습니다</p>
+
+<p>일단 이 3가지가 완료되었다는 가정하에 시작하겠습니다</p>
+
+<ol>
+<li>Git 2.8 이상을 설치했다</li>
+<li>Github 계정이 있다</li>
+<li>공식문서의 <a href="https://gohugo.io/getting-started/quick-start/">Quickstart</a>를 완료했거나, Hugo를 설치했고 테마 설정에서 Configure까지 다 했다</li>
+</ol>
+
+<p>*저는 깃허브에서 제공해주는 <strong>사용자 페이지</strong>에 호스팅을 할꺼니 만약 프로젝트 페이지에 호스팅을 하고 싶다면 공식 문서를 참고해 주세요.*</p>
+
+<ol>
+<li>깃허브에 블로그 프로젝트를 위한 Repository를 하나 만들어 주세요 (편의상 이 Repo를 Blog Repo라고 부르겠습니다). 이 Repo에는 휴고의 Content와 다른 Source 파일들이 올라갈 겁니다. (이때 Repo URL을 복사해 둡시다)</li>
+<li>새로운 Repository를 하나 더 팝니다. 이때 Repository이름은 반드시 <strong><a href="http://username.github.io">username.github.io</a></strong> 형식을 따라야 합니다 (제 github username이 daniel2231이니 <a href="http://daniel2231.github.io">daniel2231.github.io</a>로 repo를 만들었습니다). 이 Repository에는 나중에 렌더된 파일이 올라갈 겁니다.</li>
+<li>터미널 창에 들어가 여때까지 만든 프로젝트를 아까 처음 만든 Blog Repo에 push해줍시다.</li>
+<li>이제 원하는 작업을 해주고 다했으면 <code>hugo server</code>을 쳐 로컬로 서버를 켜 잘 돌아가는지 한번 확인해 줍시다.</li>
+<li>만족했으면 서버를 꺼주고 <code>git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</code>를 쳐주세요. 이때 저희가 해준건 Git의 Submodule을 만들어 빌드된 Public 폴더가 다른 remote origin을 가지게 해주는 겁니다.</li>
+</ol>
+
+<p>이걸 스크립트를 써서 간단하게 해줄 수 있습니다. root folder에 <code>deploy.sh</code>라는 파일을 만들어 밑에 코드와 똑같이 써줍시다.</p>
+
+<pre><code>#!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+
+# Build the project.
+hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+
+# Come Back up to the Project Root
+cd ..
+</code></pre>
+
+<p>이때 쓰고 있는 테마 이름만 넣어주면 됩니다.</p>
+
+<p>이제 코멘드창에 <code>./deploy.sh &quot;커밋할 메세지&quot;</code>만 적어주면 사용자 페이지 repository로 자동으로 커밋되고 푸쉬가 될겁니다.</p>
+
+<p>그럼 끝~!  여러분들의 블로그가 <code>&lt;username&gt;.github.io</code>에 뜹니다!</p>
+
+<p>더 자세히 쓰고 싶은데, 해야 할께 많아서 많이 못썼네요 ㅠㅠ 다음에는 더 열심히 적어보도록 하겠습니다!</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://daniel2231.github.io/tags/study-notes">Study Notes</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>403 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-05-31 14:54 &#43;0900</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other posts</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://daniel2231.github.io/posts/hello-world/">
+                                <span class="button__text">Hello World!</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+            <span></span>
+            <span> <a href="https://daniel2231.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.9e52e68b082cf2a30a7fead88260edb8818fbd7f7831e39674917d4539ec75df41ba88eaddfbd916594ab4fb2a31913b46cf2d6094cf80381edb8c632512a8ca.js" integrity="sha512-nlLmiwgs8qMKf&#43;rYgmDtuIGPvX94MeOWdJF9RTnsdd9Buojq3fvZFllKtPsqMZE7Rs8tYJTPgDge24xjJRKoyg=="></script>
+
+
+
+    </body>
+</html>

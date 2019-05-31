@@ -5,8 +5,97 @@
         <description>Recent content in Posts on Daniel&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 31 May 2019 03:24:30 +0900</lastBuildDate>
+        <lastBuildDate>Fri, 31 May 2019 14:54:26 +0900</lastBuildDate>
         <atom:link href="https://daniel2231.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Hugo와 Github Pages 연동하기</title>
+            <link>https://daniel2231.github.io/posts/hugo-setup-190531/</link>
+            <pubDate>Fri, 31 May 2019 14:54:26 +0900</pubDate>
+            
+            <guid>https://daniel2231.github.io/posts/hugo-setup-190531/</guid>
+            <description>Hugo - Github Pages 연동 Hugo란? Static (정직) 웹 엔진으로, Markdown 기반입니다. 일종의 블로그 엔진이라 할 수 있겠군요. Hugo라는 블로그 프레임워크로 손쉽게 블로그를 만들 수 있습니다. 또한, 다양한 블로그 테마가 있어서 원하는 테마를 골라서 쓸 수 있습니다. 여러므로 편한 블로그 프레임워크인 것 같습니다.
+Github Pages란? 깃헙 페이지란 깃헙에서 무료로 웹 호스팅을 해주는 서비스 입니다. 간혹 가다가 블로그 중에 &amp;lt;github username&amp;gt;.github.io 형식의 URL을 발견 할 수 있는데, 이게 바로 깃헙 페이지로 만든 블로그라는 뜻입니다.</description>
+            <content type="html"><![CDATA[
+
+<h1 id="hugo-github-pages-연동">Hugo - Github Pages 연동</h1>
+
+<h2 id="hugo란">Hugo란?</h2>
+
+<p>Static (정직) 웹 엔진으로, Markdown 기반입니다. 일종의 블로그 엔진이라 할 수 있겠군요. Hugo라는 블로그 프레임워크로 손쉽게 블로그를 만들 수 있습니다. 또한, 다양한 블로그 테마가 있어서 원하는 테마를 골라서 쓸 수 있습니다. 여러므로 편한 블로그 프레임워크인 것 같습니다.</p>
+
+<h2 id="github-pages란">Github Pages란?</h2>
+
+<p>깃헙 페이지란 깃헙에서 <strong>무료로</strong> 웹 호스팅을 해주는 서비스 입니다. 간혹 가다가 블로그 중에 <code>&lt;github username&gt;.github.io</code> 형식의 URL을 발견 할 수 있는데, 이게 바로 깃헙 페이지로 만든 블로그라는 뜻입니다.</p>
+
+<p>깃허브 페이지에서 두가지 서비스를 제공해 줍니다.</p>
+
+<ul>
+<li>사용자 페이지: github 계정당 하나씩 주는 사용자 페이지, 저장소는 <code>username/username.github.com</code>의 구조를 가집니다</li>
+<li>프로젝트 페이지: 프로젝트마다 만들 수 있는 페이지, 주소는 <a href="http://username.github.com/projectname"><code>username.github.com/projectname</code></a> 의 형태를 가집니다</li>
+</ul>
+
+<p>더 자세히 들어갈 수 있지만 일단 간단하게 (귀찮으니깐) 여기까지 하겠습니다 ㅎㅎ</p>
+
+<h2 id="hugo-github-pages-연동-방법">Hugo - Github pages 연동 방법</h2>
+
+<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub</a></p>
+
+<p>공식 문서를 참고해서 만들었습니다</p>
+
+<p>일단 이 3가지가 완료되었다는 가정하에 시작하겠습니다</p>
+
+<ol>
+<li>Git 2.8 이상을 설치했다</li>
+<li>Github 계정이 있다</li>
+<li>공식문서의 <a href="https://gohugo.io/getting-started/quick-start/">Quickstart</a>를 완료했거나, Hugo를 설치했고 테마 설정에서 Configure까지 다 했다</li>
+</ol>
+
+<p>*저는 깃허브에서 제공해주는 <strong>사용자 페이지</strong>에 호스팅을 할꺼니 만약 프로젝트 페이지에 호스팅을 하고 싶다면 공식 문서를 참고해 주세요.*</p>
+
+<ol>
+<li>깃허브에 블로그 프로젝트를 위한 Repository를 하나 만들어 주세요 (편의상 이 Repo를 Blog Repo라고 부르겠습니다). 이 Repo에는 휴고의 Content와 다른 Source 파일들이 올라갈 겁니다. (이때 Repo URL을 복사해 둡시다)</li>
+<li>새로운 Repository를 하나 더 팝니다. 이때 Repository이름은 반드시 <strong><a href="http://username.github.io">username.github.io</a></strong> 형식을 따라야 합니다 (제 github username이 daniel2231이니 <a href="http://daniel2231.github.io">daniel2231.github.io</a>로 repo를 만들었습니다). 이 Repository에는 나중에 렌더된 파일이 올라갈 겁니다.</li>
+<li>터미널 창에 들어가 여때까지 만든 프로젝트를 아까 처음 만든 Blog Repo에 push해줍시다.</li>
+<li>이제 원하는 작업을 해주고 다했으면 <code>hugo server</code>을 쳐 로컬로 서버를 켜 잘 돌아가는지 한번 확인해 줍시다.</li>
+<li>만족했으면 서버를 꺼주고 <code>git submodule add -b master [git@github.com](mailto:git@github.com):&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public</code>를 쳐주세요. 이때 저희가 해준건 Git의 Submodule을 만들어 빌드된 Public 폴더가 다른 remote origin을 가지게 해주는 겁니다.</li>
+</ol>
+
+<p>이걸 스크립트를 써서 간단하게 해줄 수 있습니다. root folder에 <code>deploy.sh</code>라는 파일을 만들어 밑에 코드와 똑같이 써줍시다.</p>
+
+<pre><code>#!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+
+# Build the project.
+hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+
+# Come Back up to the Project Root
+cd ..
+</code></pre>
+
+<p>이때 쓰고 있는 테마 이름만 넣어주면 됩니다.</p>
+
+<p>이제 코멘드창에 <code>./deploy.sh &quot;커밋할 메세지&quot;</code>만 적어주면 사용자 페이지 repository로 자동으로 커밋되고 푸쉬가 될겁니다.</p>
+
+<p>그럼 끝~!  여러분들의 블로그가 use</p>
+]]></content>
+        </item>
         
         <item>
             <title>Hello World!</title>

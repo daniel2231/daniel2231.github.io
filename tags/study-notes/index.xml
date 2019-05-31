@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Study Notes on Daniel&#39;s Blog</title>
+    <link>https://daniel2231.github.io/tags/study-notes/</link>
+    <description>Recent content in Study Notes on Daniel&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 May 2019 14:54:26 +0900</lastBuildDate>
+    
+	<atom:link href="https://daniel2231.github.io/tags/study-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo와 Github Pages 연동하기</title>
+      <link>https://daniel2231.github.io/posts/hugo-setup-190531/</link>
+      <pubDate>Fri, 31 May 2019 14:54:26 +0900</pubDate>
+      
+      <guid>https://daniel2231.github.io/posts/hugo-setup-190531/</guid>
+      <description>Hugo - Github Pages 연동 Hugo란? Static (정직) 웹 엔진으로, Markdown 기반입니다. 일종의 블로그 엔진이라 할 수 있겠군요. Hugo라는 블로그 프레임워크로 손쉽게 블로그를 만들 수 있습니다. 또한, 다양한 블로그 테마가 있어서 원하는 테마를 골라서 쓸 수 있습니다. 여러므로 편한 블로그 프레임워크인 것 같습니다.
+Github Pages란? 깃헙 페이지란 깃헙에서 무료로 웹 호스팅을 해주는 서비스 입니다. 간혹 가다가 블로그 중에 &amp;lt;github username&amp;gt;.github.io 형식의 URL을 발견 할 수 있는데, 이게 바로 깃헙 페이지로 만든 블로그라는 뜻입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

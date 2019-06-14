@@ -5,8 +5,98 @@
         <description>Recent content in Posts on Daniel&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 10 Jun 2019 15:47:46 +0900</lastBuildDate>
+        <lastBuildDate>Fri, 14 Jun 2019 16:19:00 +0900</lastBuildDate>
         <atom:link href="https://daniel2231.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>웹 개발 배우면서 쓰면 좋은 VS Code Extension</title>
+            <link>https://daniel2231.github.io/posts/extenstions_190614/</link>
+            <pubDate>Fri, 14 Jun 2019 16:19:00 +0900</pubDate>
+            
+            <guid>https://daniel2231.github.io/posts/extenstions_190614/</guid>
+            <description>Extension이란? 쉽게 말해서, 여러분의 삶을 편하게 해줄 VS 코드 확장 프로그램이라고 생각하면 됩니다.
+HTML 자동완성, 실시간 뷰어 등 여러 확장 프로그램들이 존재합니다.
+여태까지 제가 써보고 괜찮다고 느낀 것들을 추천하겠습니다. 기능 HTML Snippets HTML 자동완성, 이건 필수 of 필수 입니다.
+Python 파이썬을 사용하는데 유용한 기능들을 모두 때려박은 확장 extension입니다. 장고를 쓰실 거면 그냥 필수입니다.
+Live Server 여러분들의 HTML을 빨리 확인하기 위한 좋은 extension입니다. 처음에 잘 안되시는 분들이 있던데, 그때는 ctrl + shift + p를 누른다음 open in live server를 치면 나옵니다.</description>
+            <content type="html"><![CDATA[
+
+<h2 id="extension이란">Extension이란?</h2>
+
+<p>쉽게 말해서, 여러분의 삶을 편하게 해줄 VS 코드 확장 프로그램이라고 생각하면 됩니다.</p>
+
+<p>HTML 자동완성, 실시간 뷰어 등 여러 확장 프로그램들이 존재합니다.</p>
+
+<p>여태까지 제가 써보고 괜찮다고 느낀 것들을 추천하겠습니다.
+<br />
+<br />
+</p>
+
+<h2 id="기능">기능</h2>
+
+<h3 id="html-snippets">HTML Snippets</h3>
+
+<p><img src="/extention_190614/Untitled-2b5c4109-c77f-4ea8-8539-c89bfc68d2bd.png" alt="HTML Snippets" /></p>
+
+<p>HTML 자동완성, 이건 필수 of 필수 입니다.</p>
+
+<h3 id="python">Python</h3>
+
+<p><img src="/extention_190614/Untitled-9d12b39f-cefd-4637-984b-d0bd808ec0aa.png" alt="" /></p>
+
+<p>파이썬을 사용하는데 유용한 기능들을 모두 때려박은 확장 extension입니다. 장고를 쓰실 거면 그냥 필수입니다.</p>
+
+<h3 id="live-server">Live Server</h3>
+
+<p><img src="/extention_190614/Untitled-1262fb6b-7b0d-46fe-8ddc-b11b7249febe.png" alt="" /></p>
+
+<p>여러분들의 HTML을 빨리 확인하기 위한 좋은 extension입니다. 처음에 잘 안되시는 분들이 있던데, 그때는 <code>ctrl + shift + p</code>를 누른다음 open in live server를 치면 나옵니다.</p>
+
+<h3 id="auto-close-tag-auto-rename-tag">Auto Close Tag / Auto Rename Tag</h3>
+
+<p><img src="/extention_190614/Untitled-e0125877-9130-4725-bd6b-bff78ca1fcb1.png" alt="Auto Close Tag" /></p>
+
+<p><img src="/extention_190614/Untitled-e531ab5e-c3a5-4846-aa1f-494c70c547e2.png" alt="Auto Rename Tag" /></p>
+
+<p>HTML 태그를 다루는걸 쉽게 해주는 녀석입니다. 위에 녀석은 자동으로 닫는 태그를 만들어주고, 밑에 녀석은 태그를 다른 태그로 바꿔야할때, 여는 태그와 닫는 태그를 동시에 바꿔줍니다. 하나만 다운 받는걸 추천드립니다.
+<br />
+<br />
+</p>
+
+<h2 id="외적-부분">외적 부분</h2>
+
+<h3 id="vscode-icons">vscode-icons</h3>
+
+<p><img src="/extention_190614/Untitled-9b996f24-287d-47b2-a2ae-3fb87fb9abfc.png" alt="" /></p>
+
+<p>왼쪽 폴더창에 아이콘들을 좀 더 이쁘게 바꿔줍니다. 각 확장자 마다 어떤 녀석인지 눈에 확확들어오기 때문에 눈이 한결 편해집니다. (이 말고도 아이콘 모양을 바꿔주는 많은 extension이 있습니다. 취향에 맞는걸 검색해서 사용하세요)</p>
+
+<h3 id="prettier">Prettier</h3>
+
+<p><img src="/extention_190614/-c9188a14-436b-4489-9196-20802f4b027cUntitled" alt="" /></p>
+
+<pre><code>foo(reallyLongArg(), omgSoManyParameters(), IShouldRefactorThis(), isThereSeriouslyAnotherOne());
+</code></pre>
+
+<p>이거를</p>
+
+<pre><code>foo(
+  reallyLongArg(),
+  omgSoManyParameters(),
+  IShouldRefactorThis(),
+  isThereSeriouslyAnotherOne()
+);
+</code></pre>
+
+<p>이렇게 예쁘게 꾸며줍니다</p>
+
+<h3 id="rainbow-brackets">Rainbow Brackets</h3>
+
+<p><img src="/extention_190614/Untitled-48bbc444-d039-41eb-b61a-7bd486fced6d.png" alt="Rainbow Brackets" /></p>
+
+<p>bracket을 알록달록하게 만들어 줍니다. 중첩으로 bracket이 쓰여질때 눈에 더 잘보입니다.</p>
+]]></content>
+        </item>
         
         <item>
             <title>되돌아보며</title>

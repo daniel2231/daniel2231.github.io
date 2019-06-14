@@ -6,10 +6,23 @@
     <description>Recent content on Daniel&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Jun 2019 15:47:46 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 14 Jun 2019 16:19:00 +0900</lastBuildDate>
     
 	<atom:link href="https://daniel2231.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>웹 개발 배우면서 쓰면 좋은 VS Code Extension</title>
+      <link>https://daniel2231.github.io/posts/extenstions_190614/</link>
+      <pubDate>Fri, 14 Jun 2019 16:19:00 +0900</pubDate>
+      
+      <guid>https://daniel2231.github.io/posts/extenstions_190614/</guid>
+      <description>Extension이란? 쉽게 말해서, 여러분의 삶을 편하게 해줄 VS 코드 확장 프로그램이라고 생각하면 됩니다.
+HTML 자동완성, 실시간 뷰어 등 여러 확장 프로그램들이 존재합니다.
+여태까지 제가 써보고 괜찮다고 느낀 것들을 추천하겠습니다. 기능 HTML Snippets HTML 자동완성, 이건 필수 of 필수 입니다.
+Python 파이썬을 사용하는데 유용한 기능들을 모두 때려박은 확장 extension입니다. 장고를 쓰실 거면 그냥 필수입니다.
+Live Server 여러분들의 HTML을 빨리 확인하기 위한 좋은 extension입니다. 처음에 잘 안되시는 분들이 있던데, 그때는 ctrl + shift + p를 누른다음 open in live server를 치면 나옵니다.</description>
+    </item>
     
     <item>
       <title>되돌아보며</title>
